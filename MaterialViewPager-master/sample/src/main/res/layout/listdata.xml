@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/edu"
+        android:scaleType="fitXY"
+        android:layout_width="90dp"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BookName"
+            android:id="@+id/bookname"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="#000000"
+            android:textAllCaps="false"
+            android:fontFamily="casual" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-Author"
+            android:id="@+id/author"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="10sp" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:text="RS 100"
+        android:id="@+id/price"
+        android:textAlignment="textEnd"
+        android:textColor="@color/green"
+        android:paddingTop="35dp"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        tools:ignore="RtlCompat" />
+
+</LinearLayout>

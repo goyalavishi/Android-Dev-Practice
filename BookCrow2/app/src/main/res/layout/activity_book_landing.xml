@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context=".BookLanding"
+    android:background="@drawable/p1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="190dp"
+        >
+
+
+        <ImageView
+
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+
+            android:src="@drawable/booksample"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+
+            android:textSize="30dp"
+            android:text="BOOK NAME"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+
+            android:textSize="20dp"
+            android:text="Author Name : xyz abc"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+
+            android:textSize="20dp"
+            android:text="Publisher : xyz abc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+
+            android:textSize="20dp"
+            android:text="Edition : 10th"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+
+                android:textSize="20dp"
+                android:text="Genre : Sci-fi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+
+            android:textSize="20dp"
+            android:text="Ratings : 5"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+        <!-- Rent Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/rent"
+            android:layout_marginTop="30dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="20dp"
+            android:padding="12dp"
+            android:text="RENT BOOK"/>
+
+        <TextView android:id="@+id/termsAndConditions"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Terms And Condition"
+            android:gravity="center"
+            android:textSize="16dip"/>
+
+    </LinearLayout>
+</ScrollView>

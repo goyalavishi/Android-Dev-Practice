@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout tools:context="com.example.avishigoyal.autocomplete.MainActivity"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_main"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Enter a colour:"/>
+
+    <AutoCompleteTextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/autoCompleteTextView"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/color" android:layout_marginTop="47dp" android:text="Button" android:layout_below="@+id/autoCompleteTextView" android:layout_alignEnd="@+id/textView" android:layout_alignRight="@+id/textView"/>
+
+</RelativeLayout>

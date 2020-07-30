@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/log"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shruti.bookcrow.LogIn"
+    tools:showIn="@layout/activity_log_in">
+
+
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:drawableLeft="@drawable/c1"
+        android:hint="@string/username"
+        android:layout_marginTop="184dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:drawableLeft="@drawable/lock"
+        android:id="@+id/password"
+        android:hint="@string/password"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username"
+        android:layout_alignRight="@+id/username"
+        android:layout_alignEnd="@+id/username" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:id="@+id/log"
+        android:layout_marginTop="44dp"
+        android:background="#f45e1c"
+        android:layout_below="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_marginLeft="40dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1"
+        android:checked="false"
+        android:thumbTint="@color/colorPrimaryDark"
+        android:layout_below="@+id/username"
+        android:layout_alignRight="@+id/username"
+        android:layout_alignEnd="@+id/username"
+        android:buttonTint="#030c4c" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/sign"
+        android:layout_alignTop="@+id/log"
+        android:layout_toLeftOf="@+id/switch1"
+        android:background="#f45e1c" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget"
+        android:id="@+id/forget"
+        android:layout_below="@+id/password"
+        android:layout_alignRight="@+id/password"
+        android:layout_alignEnd="@+id/password"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined" />
+</RelativeLayout>

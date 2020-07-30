@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.florent37.materialviewpager.sample">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".viewPager.MainActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".bookcrow.BookCrow"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".bookcrow.BookCrow2"
+            android:label="@string/title_activity_book_crow2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".bookcrow.LogIn" />
+
+        <activity android:name=".bookcrow.Lending">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".bookcrow.Categories"
+            android:label="Choose a category"
+            android:theme="@style/AppTheme" />
+
+
+
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="29cbd600bb8183011201895a931db91e93f2d614" />
+
+        <activity
+            android:name=".bookcrow.Search"
+            android:label="@string/title_activity_search"></activity>
+
+        <activity android:name=".bookcrow.Preference"></activity>
+        <activity android:name=".bookcrow.LeasedBook"></activity>
+        <activity android:name=".bookcrow.Settings"></activity>
+        <activity android:name=".bookcrow.RentedBook"></activity>
+        <activity android:name=".bookcrow.SignUp"></activity>
+    </application>
+
+</manifest>

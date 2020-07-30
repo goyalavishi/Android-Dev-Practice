@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/kbc3"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shruti.kaunbanegacrorepati.Quiz"
+    tools:showIn="@layout/activity_quiz">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ques"
+        android:textStyle="normal"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:layout_marginTop="204dp"
+        android:background="#040137"
+        android:layout_alignParentTop="true"
+        android:text="What is your name?" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="86dp"
+        android:layout_below="@+id/ques"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Option 1"
+                android:id="@+id/opt1"
+                android:layout_column="0"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:background="#040137" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="Option 2"
+                android:id="@+id/opt2"
+                android:layout_column="1"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:background="#040137" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_column="0" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 3"
+                android:id="@+id/opt3"
+                android:layout_column="0"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 4"
+                android:id="@+id/opt4"
+                android:layout_column="1"
+                android:background="#040137"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:id="@+id/score"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

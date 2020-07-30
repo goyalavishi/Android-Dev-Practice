@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:id="@+id/rl"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/music"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shruti.radio3.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hindi"
+        android:id="@+id/hindi"
+        android:background="#fefefe"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/eng"
+        android:layout_alignStart="@+id/eng"
+        android:layout_marginTop="51dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENGLISH"
+        android:id="@+id/eng"
+        android:background="#010101"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/hindi"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    Songs "
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#050505"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="122dp"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>

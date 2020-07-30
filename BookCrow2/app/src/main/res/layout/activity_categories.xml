@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_categories"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/library"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shruti.bookcrow.Categories">
+
+    <TextView
+        android:text="CATEGORIES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView6"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <FrameLayout
+                android:background="#CCFFFFFF"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/mystery"
+                android:elevation="1dp">
+                <ImageView
+                    app:srcCompat="@drawable/m1"
+                    android:layout_alignTop="@+id/tableLayout"
+                    android:id="@+id/imageView9"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+
+                <TextView
+                    android:text="Mystery"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:background="#CCFFFFFF"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/romance">
+                <ImageView
+                    app:srcCompat="@drawable/heart"
+                    android:layout_alignTop="@+id/tableLayout"
+                    android:layout_width="32dp"
+                    android:alpha="1"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="25dp"
+                    />
+                <TextView
+                    android:text="Romance"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"/>
+            </FrameLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <FrameLayout
+                android:background="#CCFFFFFF"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/horror">
+                <ImageView
+                    app:srcCompat="@drawable/death"
+                    android:layout_alignTop="@+id/tableLayout"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:text="Horror"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:background="#CCFFFFFF"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/education">
+                <ImageView
+                    app:srcCompat="@drawable/lecture"
+                    android:layout_alignTop="@+id/tableLayout"
+                    android:layout_width="32dp"
+                    android:alpha="1"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    />
+                <TextView
+                    android:text="Education"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"/>
+            </FrameLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <FrameLayout
+                android:background="#CCFFFFFF"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/fiction">
+                <ImageView
+                    app:srcCompat="@drawable/island"
+                    android:layout_alignTop="@+id/tableLayout"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:text="Fiction"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:background="#CCFFFFFF"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/sci_fi">
+
+                <ImageView
+                    app:srcCompat="@drawable/sship"
+                    android:layout_alignTop="@+id/tableLayout"
+                    android:layout_width="32dp"
+                    android:alpha="1"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    />
+                <TextView
+                    android:text="Sci-Fiction"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"/>
+            </FrameLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            >
+
+            <FrameLayout
+                android:background="#CCFFFFFF"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/biography">
+                <ImageView
+                    app:srcCompat="@drawable/e"
+                    android:layout_alignTop="@+id/tableLayout"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:text="Biography"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:background="#CCFFFFFF"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/drama">
+                <ImageView
+                    app:srcCompat="@drawable/theatre"
+                    android:layout_alignTop="@+id/tableLayout"
+                    android:layout_width="32dp"
+                    android:alpha="1"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    />
+                <TextView
+                    android:text="Drama"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"/>
+            </FrameLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:text="Skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/skip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#CC000000"
+        android:textColor="@android:color/background_light"
+        android:layout_marginBottom="0dp" />
+
+</RelativeLayout>
+

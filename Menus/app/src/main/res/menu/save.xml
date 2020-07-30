@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/sim1"
+    android:title="Save to SIM1"
+    />
+  <item
+      android:id="@+id/sim2"
+      android:title="Save to SIM2"
+      />
+    <item
+        android:id="@+id/Sd"
+        android:title="Save to SD card"
+        />
+</menu>
